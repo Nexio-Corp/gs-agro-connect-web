@@ -1,0 +1,22 @@
+@import url("./cabecalho.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #289022;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+main{
+    background: url("../assets/fundo_agricultura.png") no-repeat center center;
+    background-size: cover;
+    height: 86vh;
+}
