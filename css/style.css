@@ -1,8 +1,10 @@
 @import url("./cabecalho.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -14,12 +16,6 @@ a {
 button:hover {
     transform: scale(1.2);
     transition: 0.5s;
-}
-
-.banner {
-	background: url("../assets/fundo_agricultura.png") no-repeat center center;
-	background-size: cover;
-	height: 70vh;
 }
 
 .botao-padrao {

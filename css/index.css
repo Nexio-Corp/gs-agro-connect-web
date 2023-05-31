@@ -1,2 +1,35 @@
 @import url("style.css");
 
+.banner {
+    background: url("../assets/fundo_agricultura.png") no-repeat center center;
+	background-size: cover;
+	height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-conteudo {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 0 auto;
+}
+
+.banner-conteudo-titulo {
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.banner-conteudo-subtitulo {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.banner a {
+    width: fit-content;
+    margin: 0 auto;
+}
