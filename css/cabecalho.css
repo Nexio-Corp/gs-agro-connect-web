@@ -29,20 +29,14 @@ nav {
   font-weight: 500;
 }
 
+.lista-nav li a:hover {
+	opacity: 0.7;
+}
+
 #item-aprenda_mais::after {
     content: " \25BC";
     color: #289022;
     font-size: 12px;
-}
-
-.botao-entrar {
-  background-color: #289022;
-  color: #fff;
-  padding: 0.6rem 1.5rem;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 0;
 }
 
 .mobile-menu {
