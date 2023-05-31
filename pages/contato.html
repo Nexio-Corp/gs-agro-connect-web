@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home | AgroConnect</title>
+
+        <link rel="stylesheet" href="../css/contato.css">
+		<script src="../js/mobile-navbar.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img
+					class="logo-agroconnect"
+					src="../assets/logo_agroconnect.png"
+					alt="Logo AgroConnect"
+				/>
+				<ul class="lista-nav">
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">Agro Guru</a>
+					</li>
+					<li>
+						<a href="">Comércio Sustentável</a>
+					</li>
+					<li>
+						<a href="">Contato</a>
+					</li>
+					<li>
+						<a id="item-aprenda_mais" href="">Aprenda mais</a>
+					</li>
+					<li>
+						<a href="">Parcerias</a>
+					</li>
+				</ul>
+				<a href=""><button class="botao-padrao">Entrar</button></a>
+				<img class="logo-nexio" src="../assets/logo_Nexio.png" alt="Logo Nexio" />
+
+				<div class="mobile-menu">
+					<div class="linha1"></div>
+					<div class="linha2"></div>
+					<div class="linha3"></div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+            <h1>Fale Conosco</h1>
+            
+            <form class="secao-formulario" action="">
+                <div class="inputs-formulario">
+                    <div class="conjunto-inputs">
+                        <div class="input">
+                            <label class="input-titulo" for="contatoNome">Nome completo</label>
+                            <input class="input-conteudo-2" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
+                        </div>
+                        
+                        <div class="input">
+                            <label class="input-titulo" for="contatoCategoria">Categoria</label>
+                            <select class="input-conteudo-2" name="categoria" id="contatoCategoria" required>
+                                <option value="" disabled selected>Escolha uma categoria</option>
+                                <option value="comunidade">Comunidade</option>
+                                <option value="produtorAgricola">Produtor Agrícola</option>
+                                <option value="empresa">Empresa</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="input-titulo" for="contatoEmail">Email</label>
+                        <input class="input-conteudo-1" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
+                    </div>
+
+                    <div class="conjunto-inputs">
+                        <div class="input">
+                            <label class="input-titulo" for="contatoTelefone">Telefone/Celular</label>
+                            <input class="input-conteudo-2" type="tel" name="telefone" id="contatoTelefone" required>
+                        </div>
+        
+                        <fieldset class="input">
+                            <legend class="input-titulo">Este número é WhatsApp?</legend>
+                            <input type="radio" name="whatsapp" id="contatoWhatsappSim" value="sim" required>
+                            <label for="contatoWhatsappSim">Sim</label>
+                            <input type="radio" name="whatsapp" id="contatoWhatsappNao" value="nao" required>
+                            <label for="contatoWhatsappNao">Não</label>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <fieldset>
+                            <legend class="input-titulo">Qual é sua preferência de contato?</legend>
+                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaWhatsapp" value="whatsapp" required>
+                            <label for="contatoPreferenciaWhatsapp">WhatsApp</label>
+                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaTelefone" value="telefone" required>
+                            <label for="contatoPreferenciaTelefone">Telefone</label>
+                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaEmail" value="email" required>
+                            <label for="contatoPreferenciaEmail">Email</label>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        <label class="input-titulo" for="contatoPais">País</label>
+                        <input class="input-conteudo" type="text" name="pais" id="contatoPais">
+                    </div>
+                    
+                    <div>
+                        <label class="input-titulo" for="contatoEstado">Estado</label>
+                        <input class="input-conteudo" type="text" name="estado" id="contatoEstado">
+                        
+                        <label class="input-titulo" for="contatoCidade">Cidade</label>
+                        <input class="input-conteudo" type="text" name="cidade" id="contatoCidade">
+                    </div>
+
+                    <div>
+                        <label class="input-titulo" for="contatoAssunto">Assunto da Mensagem</label>
+                        <select name="assunto" id="contatoAssunto" required>
+                            <option value="" disabled selected>Escolha um assunto</option>
+                            <option value="duvidasGerais">Dúvidas Gerais</option>
+                            <option value="suporteTecnico">Suporte Técnico</option>
+                            <option value="sugestoesMelhoria">Sugestões de Melhoria</option>
+                            <option value="parcerias">Parcerias e Colaborações</option>
+                            <option value="relatoProblema">Relatar um Problema</option>
+                            <option value="outro">Outros Assuntos</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="input-titulo" for="contatoMensagem">Mensagem</label>
+                        <textarea name="mensagem" id="contatoMensagem" cols="50" rows="10" required></textarea>
+                    </div>
+
+                    <input type="submit" value="enviar">
+                </div>
+            </form>
+        </main>
+
+        <footer class="rodape">
+                <img class="logo-rodape" src="../assets/logo_fiap.png" alt="Logo Fiap">
+                <img class="logo-rodape" src="../assets/logo_caçafome.png" alt="Logo Caça-Fome">
+                <img class="logo-rodape" src="../assets/logo_microsoft.png" alt="Logo Microsoft">
+                <img class="logo-rodape" src="../assets/logo_kraft-heinz.png" alt="Logo Kraft Heinz">
+            <div class="autores-rodape">
+                <p>Adrian Satiro Sivilha - rm97784</p>
+                <p>Cauã Alencar Rojas Romero - rm98638</p>
+                <p>Jaci Teixeira Santos - rm99627</p>
+                <p>Pedro Henrique Nobrega de Castro Paterno - rm99726</p>
+                <p>Sabrina Faustino do Prado - rm99570</p>
+            </div>
+        </footer>
+	</body>
+</html>

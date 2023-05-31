@@ -1,0 +1,45 @@
+@import url("style.css");
+
+.secao-formulario {
+	width: 75%;
+    margin: 0 auto;
+    background-color: rgba(245, 220, 197, 0.6);
+    border-radius: 1rem;
+}
+
+.inputs-formulario {
+	width: 85%;
+    margin: 0 auto;
+}
+
+.conjunto-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    width: 50%;
+}
+
+.input-titulo {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #289022;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.input-conteudo-2 {
+    width: 85%;
+    padding: 0.5rem;
+}
+
+.input-conteudo-1 {
+    width: 42.5%;
+    padding: 0.5rem;
+}
+
+fieldset {
+	display: inline-block;
+	border: none;
+}
