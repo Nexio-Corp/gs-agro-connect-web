@@ -1,0 +1,20 @@
+.rodape {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	font-size: 0.75rem;
+    padding: 1rem 0 1rem;
+}
+
+.logo-rodape {
+	height: 2.25rem;
+}
+
+.autores-rodape {
+	text-align: end;
+	font-weight: 700;
+}
+
+.autores-rodape p {
+    padding-bottom: 0.1rem;
+}
