@@ -52,14 +52,14 @@
             <form class="secao-formulario" action="">
                 <div class="inputs-formulario">
                     <div class="conjunto-inputs">
-                        <div class="input">
+                        <div class="input-padrao">
                             <label class="input-titulo input-obrigatorio" for="contatoNome">Nome completo</label>
-                            <input class="input-conteudo input-conteudo-2" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
+                            <input class="input-conteudo" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
                         </div>
                         
-                        <div class="input">
+                        <div class="input-padrao">
                             <label class="input-titulo input-obrigatorio" for="contatoCategoria">Categoria</label>
-                            <select class="input-conteudo input-conteudo-2" name="categoria" id="contatoCategoria" required>
+                            <select class="input-conteudo" name="categoria" id="contatoCategoria" required>
                                 <option value="" disabled selected>Escolha uma categoria</option>
                                 <option value="comunidade">Comunidade</option>
                                 <option value="produtorAgricola">Produtor Agrícola</option>
@@ -69,15 +69,17 @@
                         </div>
                     </div>
 
-                    <div class="input">
-                        <label class="input-titulo input-obrigatorio" for="contatoEmail">Email</label>
-                        <input class="input-conteudo input-conteudo-2" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo input-obrigatorio" for="contatoEmail">Email</label>
+                            <input class="input-conteudo" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
+                        </div>
                     </div>
 
                     <div class="conjunto-inputs">
-                        <div class="input">
+                        <div class="input-padrao">
                             <label class="input-titulo input-obrigatorio" for="contatoTelefone">Telefone/Celular</label>
-                            <input class="input-conteudo input-conteudo-2" type="tel" name="telefone" id="contatoTelefone" placeholder="Ex.: (00) 90000-0000" required>
+                            <input class="input-conteudo" type="tel" name="telefone" id="contatoTelefone" placeholder="Ex.: (00) 90000-0000" required>
                         </div>
         
                         <fieldset class="input input-radio">
@@ -93,7 +95,7 @@
                         </fieldset>
                     </div>
 
-                    <div>
+                    <div class="conjunto-inputs">
                         <fieldset class="input input-radio">
                             <legend class="input-titulo input-obrigatorio">Qual é sua preferência de contato?</legend>
                             <div>
@@ -111,39 +113,45 @@
                         </fieldset>
                     </div>
 
-                    <div class="input">
-                        <label class="input-titulo" for="contatoPais">País</label>
-                        <input class="input-conteudo input-conteudo-2" type="text" name="pais" id="contatoPais" placeholder="Ex.: Brasil">
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="contatoPais">País</label>
+                            <input class="input-conteudo" type="text" name="pais" id="contatoPais" placeholder="Ex.: Brasil">
+                        </div>
                     </div>
                                         
                     <div class="conjunto-inputs">
-                        <div class="input">
+                        <div class="input-padrao">
                             <label class="input-titulo" for="contatoEstado">Estado</label>
-                            <input class="input-conteudo input-conteudo-2" type="text" name="estado" id="contatoEstado" placeholder="Ex.: Ceará">
+                            <input class="input-conteudo" type="text" name="estado" id="contatoEstado" placeholder="Ex.: Ceará">
                         </div>
                         
-                        <div class="input">
+                        <div class="input-padrao">
                             <label class="input-titulo" for="contatoCidade">Cidade</label>
-                            <input class="input-conteudo input-conteudo-2" type="text" name="cidade" id="contatoCidade" placeholder="Ex.: Fortaleza">
+                            <input class="input-conteudo" type="text" name="cidade" id="contatoCidade" placeholder="Ex.: Fortaleza">
                         </div>
                     </div>
 
-                    <div class="input">
-                        <label class="input-titulo input-obrigatorio" for="contatoAssunto">Assunto da Mensagem</label>
-                        <select class="input-conteudo input-conteudo-2" name="assunto" id="contatoAssunto" required>
-                            <option value="" disabled selected>Escolha um assunto</option>
-                            <option value="duvidasGerais">Dúvidas Gerais</option>
-                            <option value="suporteTecnico">Suporte Técnico</option>
-                            <option value="sugestoesMelhoria">Sugestões de Melhoria</option>
-                            <option value="parcerias">Parcerias e Colaborações</option>
-                            <option value="relatoProblema">Relatar um Problema</option>
-                            <option value="outro">Outros Assuntos</option>
-                        </select>
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo input-obrigatorio" for="contatoAssunto">Assunto da Mensagem</label>
+                            <select class="input-conteudo" name="assunto" id="contatoAssunto" required>
+                                <option value="" disabled selected>Escolha um assunto</option>
+                                <option value="duvidasGerais">Dúvidas Gerais</option>
+                                <option value="suporteTecnico">Suporte Técnico</option>
+                                <option value="sugestoesMelhoria">Sugestões de Melhoria</option>
+                                <option value="parcerias">Parcerias e Colaborações</option>
+                                <option value="relatoProblema">Relatar um Problema</option>
+                                <option value="outro">Outros Assuntos</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <div class="input">
-                        <label class="input-titulo input-obrigatorio" for="contatoMensagem">Mensagem</label>
-                        <textarea class="input-conteudo input-conteudo-2" name="mensagem" id="contatoMensagem" rows="10" placeholder="Escreva aqui sua mensagem para nós!" required></textarea>
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo input-obrigatorio" for="contatoMensagem">Mensagem</label>
+                            <textarea class="input-conteudo" name="mensagem" id="contatoMensagem" rows="10" placeholder="Escreva aqui sua mensagem para nós!" required></textarea>
+                        </div>
                     </div>
 
                     <input class="botao-padrao input-enviar" type="submit" value="Enviar">
