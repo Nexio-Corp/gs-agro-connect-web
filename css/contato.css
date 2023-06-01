@@ -2,44 +2,55 @@
 
 .secao-formulario {
 	width: 75%;
-    margin: 0 auto;
-    background-color: rgba(245, 220, 197, 0.6);
-    border-radius: 1rem;
+	margin: 1.5rem auto;
+	background-color: rgba(245, 220, 197, 0.6);
+	border-radius: 1rem;
 }
 
 .inputs-formulario {
 	width: 85%;
-    margin: 0 auto;
+	margin: 0 auto;
+	padding: 2rem 0;
 }
 
 .conjunto-inputs {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .input {
-    width: 50%;
+	width: 50%;
+	margin-bottom: 1rem;
+    color: #545454;
 }
 
 .input-titulo {
-    display: block;
-    margin-bottom: 0.3rem;
-    color: #289022;
-    font-weight: 700;
-    font-size: 1.25rem;
+	display: block;
+	margin-bottom: 0.3rem;
+	color: #289022;
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+.input-conteudo {
+    padding: 0.5rem;
+    color: #545454;
 }
 
 .input-conteudo-2 {
-    width: 85%;
-    padding: 0.5rem;
+	width: 90%;
 }
 
 .input-conteudo-1 {
-    width: 42.5%;
-    padding: 0.5rem;
+	width: 45%;
 }
 
-fieldset {
-	display: inline-block;
-	border: none;
+.input-radio {
+	color: #545454;
 }
+
+.input-obrigatorio::after {
+    content: " *";
+    color: red;
+}
+

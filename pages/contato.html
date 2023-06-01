@@ -55,13 +55,13 @@
                 <div class="inputs-formulario">
                     <div class="conjunto-inputs">
                         <div class="input">
-                            <label class="input-titulo" for="contatoNome">Nome completo</label>
-                            <input class="input-conteudo-2" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
+                            <label class="input-titulo input-obrigatorio" for="contatoNome">Nome completo</label>
+                            <input class="input-conteudo input-conteudo-2" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
                         </div>
                         
                         <div class="input">
-                            <label class="input-titulo" for="contatoCategoria">Categoria</label>
-                            <select class="input-conteudo-2" name="categoria" id="contatoCategoria" required>
+                            <label class="input-titulo input-obrigatorio" for="contatoCategoria">Categoria</label>
+                            <select class="input-conteudo input-conteudo-2" name="categoria" id="contatoCategoria" required>
                                 <option value="" disabled selected>Escolha uma categoria</option>
                                 <option value="comunidade">Comunidade</option>
                                 <option value="produtorAgricola">Produtor Agrícola</option>
@@ -71,54 +71,68 @@
                         </div>
                     </div>
 
-                    <div>
-                        <label class="input-titulo" for="contatoEmail">Email</label>
-                        <input class="input-conteudo-1" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
+                    <div class="input">
+                        <label class="input-titulo input-obrigatorio" for="contatoEmail">Email</label>
+                        <input class="input-conteudo input-conteudo-2" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
                     </div>
 
                     <div class="conjunto-inputs">
                         <div class="input">
-                            <label class="input-titulo" for="contatoTelefone">Telefone/Celular</label>
-                            <input class="input-conteudo-2" type="tel" name="telefone" id="contatoTelefone" required>
+                            <label class="input-titulo input-obrigatorio" for="contatoTelefone">Telefone/Celular</label>
+                            <input class="input-conteudo input-conteudo-2" type="tel" name="telefone" id="contatoTelefone" placeholder="Ex.: (00) 90000-0000" required>
                         </div>
         
-                        <fieldset class="input">
-                            <legend class="input-titulo">Este número é WhatsApp?</legend>
-                            <input type="radio" name="whatsapp" id="contatoWhatsappSim" value="sim" required>
-                            <label for="contatoWhatsappSim">Sim</label>
-                            <input type="radio" name="whatsapp" id="contatoWhatsappNao" value="nao" required>
-                            <label for="contatoWhatsappNao">Não</label>
+                        <fieldset class="input input-radio">
+                            <legend class="input-titulo input-obrigatorio">Este número é WhatsApp?</legend>
+                            <div>
+                                <input type="radio" name="whatsapp" id="contatoWhatsappSim" value="sim" required>
+                                <label for="contatoWhatsappSim">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="whatsapp" id="contatoWhatsappNao" value="nao" required>
+                                <label for="contatoWhatsappNao">Não</label>
+                            </div>
                         </fieldset>
                     </div>
 
                     <div>
-                        <fieldset>
-                            <legend class="input-titulo">Qual é sua preferência de contato?</legend>
-                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaWhatsapp" value="whatsapp" required>
-                            <label for="contatoPreferenciaWhatsapp">WhatsApp</label>
-                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaTelefone" value="telefone" required>
-                            <label for="contatoPreferenciaTelefone">Telefone</label>
-                            <input type="radio" name="preferenciaContato" id="contatoPreferenciaEmail" value="email" required>
-                            <label for="contatoPreferenciaEmail">Email</label>
+                        <fieldset class="input input-radio">
+                            <legend class="input-titulo input-obrigatorio">Qual é sua preferência de contato?</legend>
+                            <div>
+                                <input type="radio" name="preferenciaContato" id="contatoPreferenciaWhatsapp" value="whatsapp" required>
+                                <label for="contatoPreferenciaWhatsapp">WhatsApp</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="preferenciaContato" id="contatoPreferenciaTelefone" value="telefone" required>
+                                <label for="contatoPreferenciaTelefone">Telefone</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="preferenciaContato" id="contatoPreferenciaEmail" value="email" required>
+                                <label for="contatoPreferenciaEmail">Email</label>
+                            </div>
                         </fieldset>
                     </div>
 
-                    <div>
+                    <div class="input">
                         <label class="input-titulo" for="contatoPais">País</label>
-                        <input class="input-conteudo" type="text" name="pais" id="contatoPais">
+                        <input class="input-conteudo input-conteudo-2" type="text" name="pais" id="contatoPais" placeholder="Ex.: Brasil">
                     </div>
-                    
-                    <div>
-                        <label class="input-titulo" for="contatoEstado">Estado</label>
-                        <input class="input-conteudo" type="text" name="estado" id="contatoEstado">
+                                        
+                    <div class="conjunto-inputs">
+                        <div class="input">
+                            <label class="input-titulo" for="contatoEstado">Estado</label>
+                            <input class="input-conteudo input-conteudo-2" type="text" name="estado" id="contatoEstado" placeholder="Ex.: Ceará">
+                        </div>
                         
-                        <label class="input-titulo" for="contatoCidade">Cidade</label>
-                        <input class="input-conteudo" type="text" name="cidade" id="contatoCidade">
+                        <div class="input">
+                            <label class="input-titulo" for="contatoCidade">Cidade</label>
+                            <input class="input-conteudo input-conteudo-2" type="text" name="cidade" id="contatoCidade" placeholder="Ex.: Fortaleza">
+                        </div>
                     </div>
 
-                    <div>
-                        <label class="input-titulo" for="contatoAssunto">Assunto da Mensagem</label>
-                        <select name="assunto" id="contatoAssunto" required>
+                    <div class="input">
+                        <label class="input-titulo input-obrigatorio" for="contatoAssunto">Assunto da Mensagem</label>
+                        <select class="input-conteudo input-conteudo-2" name="assunto" id="contatoAssunto" required>
                             <option value="" disabled selected>Escolha um assunto</option>
                             <option value="duvidasGerais">Dúvidas Gerais</option>
                             <option value="suporteTecnico">Suporte Técnico</option>
@@ -129,12 +143,12 @@
                         </select>
                     </div>
 
-                    <div>
-                        <label class="input-titulo" for="contatoMensagem">Mensagem</label>
-                        <textarea name="mensagem" id="contatoMensagem" cols="50" rows="10" required></textarea>
+                    <div class="input">
+                        <label class="input-titulo input-obrigatorio" for="contatoMensagem">Mensagem</label>
+                        <textarea class="input-conteudo input-conteudo-2" name="mensagem" id="contatoMensagem" rows="10" placeholder="Escreva aqui sua mensagem para nós!" required></textarea>
                     </div>
 
-                    <input type="submit" value="enviar">
+                    <input class="botao-padrao input-enviar" type="submit" value="Enviar">
                 </div>
             </form>
         </main>
