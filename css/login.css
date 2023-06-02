@@ -1,0 +1,20 @@
+@import url("./style.css");
+
+.secao-pagina-login {
+    width: 75%;
+	margin: 1.5rem auto;
+	background-color: rgba(245, 220, 197, 0.6);
+	border-radius: 1rem;
+    display: flex;
+    height: 600px;
+}
+
+.subsecao-pagina-login {
+    width: 50%;
+}
+
+.teste1 {
+    background: url("../assets/foto_colheita.png") center;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+}
