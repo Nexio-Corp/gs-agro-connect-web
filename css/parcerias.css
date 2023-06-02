@@ -1,0 +1,46 @@
+@import url("./style.css");
+
+.secao-apresentacao-parcerias {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.secao-parceria {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.descricao-empresa-parceira,
+.imagem-empresa-parceira {
+	width: 50%;
+}
+
+.descricao-empresa-parceira {
+	margin: auto 0;
+}
+
+.descricao-empresa-parceira:nth-of-type(odd) {
+	margin-left: 10%;
+}
+
+.descricao-empresa-parceira h3 {
+    margin-bottom: 1rem;
+}
+
+.imagem-empresa-parceira {
+	text-align: center;
+}
+
+.secao-parceria p {
+	color: #454545;
+	width: 82.5%;
+}
+
+.imagem-empresa-parceira img {
+	width: 60%;
+	border: solid 0.25rem #289022;
+}
+
+.botao-centralizado {
+    text-align: center;
+}
