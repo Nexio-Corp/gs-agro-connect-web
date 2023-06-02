@@ -56,7 +56,7 @@ fieldset {
 	padding: 0.6rem 1.5rem;
 	font-weight: 600;
 	font-size: 16px;
-	border-radius: 10px;
+	border-radius: 0.625rem;
 	border: 0;
 	cursor: pointer;
 }
@@ -65,7 +65,7 @@ fieldset {
     display: block;
     margin: 2rem auto 0;
     width: 25%;
-    font-size: 20px;
+    font-size: 1.25rem;
     white-space: pre-wrap;
 }
 
@@ -105,9 +105,16 @@ fieldset {
     padding: 0.5rem;
     color: #545454;
     width: 90%;
+	border: none;
+	border-radius: 0.625rem;
+	background-color: #FFFDF4;
 }
 
 .input-obrigatorio::after {
     content: " *";
     color: red;
+}
+
+.input-radio-opcao {
+	accent-color: #289022;
 }
