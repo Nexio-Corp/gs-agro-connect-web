@@ -31,7 +31,15 @@
     width: 100%;
 }
 
-.informacoes-login {
+.input-titulo {
+    margin-top: 1rem;
+}
+
+.input-enviar {
+    margin-bottom: 2rem;
+}
+
+.informacoes-login, .informacoes-cadastro {
     width: 70%;
     margin: 0 auto;
 }
