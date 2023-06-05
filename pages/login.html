@@ -10,6 +10,7 @@
         <link rel="shortcut icon" href="./assets/icon_agroconnect.png" type="image/x-icon">
         
 		<script src="../js/mobile-navbar.js" defer></script>
+		<!-- <script src="https://kit.fontawesome.com/452777f8f4.js" crossorigin="anonymous"></script> -->
 	</head>
 	<body>
 		<header>
@@ -50,28 +51,24 @@
             <h1>Login</h1>
 
 			<section class="secao-pagina-login">
-				<div class="subsecao-pagina-login teste1">
+				<div class="subsecao-pagina-login subsecao-banner">
 					<!-- Quando esse botão for clicado, o formulário ao lado muda para formulário de cadastro e no lugar desse botão, aparece um escrito "Entrar". O mesmo vale para o oposto. -->
 					<button class="botao-padrao">Cadastre-se</button>
 				</div>
 				<div class="subsecao-pagina-login">
-					<div>
 						<form action="">
-							<fieldset>
+							<fieldset class="informacoes-login">
 								<label class="input-titulo" for="loginEmail">Email</label>
-                            	<input class="input-conteudo" type="email" name="email" id="loginEmail" placeholder="Ex.: mariasantos@xmail.com" required>
-								<label class="input-titulo" for="">Senha</label>
-								<input class="input-conteudo" type="password" name="" id="">
+                            	<input class="input-conteudo" type="email" name="email" id="loginEmail" placeholder="Digite seu email" required>
+								<label class="input-titulo" for="loginSenha">Senha</label>
+								<input class="input-conteudo" type="password" name="senha" id="loginSenha" placeholder="Digite sua senha">
 							</fieldset>							
 
 							<input class="botao-padrao input-enviar" type="submit" value="Entrar">
 						</form>
-					</div>
 				</div>
 
 			</section>
-            
-            
 		</main>
 
         <footer class="rodape">
@@ -89,3 +86,4 @@
         </footer>
 	</body>
 </html>
+ 
