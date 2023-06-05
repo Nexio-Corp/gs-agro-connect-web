@@ -1,1 +1,3 @@
 @import url("./style.css");
+@import url('./conteudo-default.css');
+@import url('./conteudo-768px.css');
