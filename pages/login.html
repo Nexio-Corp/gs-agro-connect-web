@@ -1,84 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Entre ou Cadastre-se | AgroConnect</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entre ou Cadastre-se | AgroConnect</title>
 
-        <link rel="stylesheet" href="../css/login.css">
-        <link rel="shortcut icon" href="./assets/icon_agroconnect.png" type="image/x-icon">
-        
-		<script src="../js/mobile-navbar.js" defer></script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a class="link-logo" href="../index.html"><img class="logo-agroconnect" src="../assets/logo_agroconnect.png" alt="Logo AgroConnect"/></a>
-				<ul class="lista-nav">
-					<li>
-						<a href="../index.html">Home</a>
-					</li>
-					<li>
-						<a href="./agroguru.html">AgroGuru</a>
-					</li>
-					<li>
-						<a href="./comerciosustentavel.html">Comércio Sustentável</a>
-					</li>
-					<li>
-						<a href="./contato.html">Contato</a>
-					</li>
-					<li>
-						<a id="item-aprenda_mais" href="">Aprenda mais</a>
-					</li>
-					<li>
-						<a href="./parcerias.html">Parcerias</a>
-					</li>
-				</ul>
-				<a href="#"><button class="botao-padrao">Entrar</button></a>
-				<img class="logo-nexio" src="../assets/logo_Nexio.png" alt="Logo Nexio" />
+        <link rel="stylesheet" href="../css/login.css" />
+        <link
+            rel="shortcut icon"
+            href="./assets/icon_agroconnect.png"
+            type="image/x-icon"
+        />
 
-				<div class="mobile-menu">
-					<div class="linha1"></div>
-					<div class="linha2"></div>
-					<div class="linha3"></div>
-				</div>
-			</nav>
-		</header>
+        <script src="../js/mobile-navbar.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="link-logo" href="../index.html"
+                    ><img
+                        class="logo-agroconnect"
+                        src="../assets/logo_agroconnect.png"
+                        alt="Logo AgroConnect"
+                /></a>
+                <ul class="lista-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./agroguru.html">AgroGuru</a>
+                    </li>
+                    <li>
+                        <a href="./comerciosustentavel.html"
+                            >Comércio Sustentável</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a id="item-aprenda_mais">Aprenda mais</a>
+                        <ul>
+                            <li>
+                                <a href="">Agricultura Sustentável</a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    >Inteligências Artificiais Generativas</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./cultivo_eficiente.html"
+                                    >Modelos de Cultivo Eficientes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./parcerias.html">Parcerias</a>
+                    </li>
+                </ul>
+                <a href="#"><button class="botao-padrao">Entrar</button></a>
+                <img
+                    class="logo-nexio"
+                    src="../assets/logo_Nexio.png"
+                    alt="Logo Nexio"
+                />
 
-		<main>
+                <div class="mobile-menu">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
             <h1>Login</h1>
 
-			<section class="secao-pagina-login">
-				<div class="subsecao-pagina-login teste1">
-					<!-- Quando esse botão for clicado, o formulário ao lado muda para formulário de cadastro e no lugar desse botão, aparece um escrito "Entrar". O mesmo vale para o oposto. -->
-					<button class="botao-padrao">Cadastre-se</button>
-				</div>
-				<div class="subsecao-pagina-login">
-					<div>
-						<form action="">
-							<fieldset>
-								<label class="input-titulo" for="loginEmail">Email</label>
-                            	<input class="input-conteudo" type="email" name="email" id="loginEmail" placeholder="Ex.: mariasantos@xmail.com" required>
-								<label class="input-titulo" for="">Senha</label>
-								<input class="input-conteudo" type="password" name="" id="">
-							</fieldset>							
+            <section class="secao-pagina-login">
+                <div class="subsecao-pagina-login teste1">
+                    <!-- Quando esse botão for clicado, o formulário ao lado muda para formulário de cadastro e no lugar desse botão, aparece um escrito "Entrar". O mesmo vale para o oposto. -->
+                    <button class="botao-padrao">Cadastre-se</button>
+                </div>
+                <div class="subsecao-pagina-login">
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <label class="input-titulo" for="loginEmail"
+                                    >Email</label
+                                >
+                                <input
+                                    class="input-conteudo"
+                                    type="email"
+                                    name="email"
+                                    id="loginEmail"
+                                    placeholder="Ex.: mariasantos@xmail.com"
+                                    required
+                                />
+                                <label class="input-titulo" for="">Senha</label>
+                                <input
+                                    class="input-conteudo"
+                                    type="password"
+                                    name=""
+                                    id=""
+                                />
+                            </fieldset>
 
-							<input class="botao-padrao input-enviar" type="submit" value="Entrar">
-						</form>
-					</div>
-				</div>
-
-			</section>
-            
-            
-		</main>
+                            <input
+                                class="botao-padrao input-enviar"
+                                type="submit"
+                                value="Entrar"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <footer class="rodape">
-                <img class="logo-rodape" src="../assets/logo_fiap.png" alt="Logo Fiap">
-                <img class="logo-rodape" src="../assets/logo_caçafome.png" alt="Logo Caça-Fome">
-                <img class="logo-rodape" src="../assets/logo_microsoft.png" alt="Logo Microsoft">
-                <img class="logo-rodape" src="../assets/logo_kraft-heinz.png" alt="Logo Kraft Heinz">
+            <img
+                class="logo-rodape"
+                src="../assets/logo_fiap.png"
+                alt="Logo Fiap"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_caçafome.png"
+                alt="Logo Caça-Fome"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_microsoft.png"
+                alt="Logo Microsoft"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_kraft-heinz.png"
+                alt="Logo Kraft Heinz"
+            />
             <div class="autores-rodape">
                 <p>Adrian Satiro Sivilha - rm97784</p>
                 <p>Cauã Alencar Rojas Romero - rm98638</p>
@@ -87,5 +148,5 @@
                 <p>Sabrina Faustino do Prado - rm99570</p>
             </div>
         </footer>
-	</body>
+    </body>
 </html>
