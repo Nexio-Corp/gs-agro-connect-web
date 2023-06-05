@@ -63,7 +63,7 @@ fieldset {
 .input-enviar {
     display: block;
     margin: 2rem auto 0;
-    width: 25%;
+    width: fit-content;
     font-size: 1.25rem;
     white-space: pre-wrap;
 }
