@@ -6,15 +6,40 @@
 	background-color: rgba(245, 220, 197, 0.6);
 	border-radius: 1rem;
     display: flex;
-    height: 600px;
+    height: 25rem;
 }
 
 .subsecao-pagina-login {
     width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.teste1 {
-    background: url("../assets/foto_colheita.png") center;
+.subsecao-banner {
+    background: url("../assets/foto_colheita.png") center no-repeat;
     background-size: cover;
     border-radius: 1rem 0 0 1rem;
+}
+
+.subsecao-banner button {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.input-conteudo {
+    width: 100%;
+}
+
+.input-titulo {
+    margin-top: 1rem;
+}
+
+.input-enviar {
+    margin-bottom: 2rem;
+}
+
+.informacoes-login, .informacoes-cadastro {
+    width: 70%;
+    margin: 0 auto;
 }
