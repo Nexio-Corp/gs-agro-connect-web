@@ -3,11 +3,11 @@ let botaoAlterar = document.querySelector(".botao-alterar-layout");
 let campoCategoria;
 let formularioCadastro;
 
-secaoPaginaLogin.addEventListener("click", function(event) {
+secaoPaginaLogin.addEventListener("click", function (event) {
     if (event.target.classList.contains("botao-alterar-layout")) {
-      alterarLayout();
+        alterarLayout();
     }
-  });
+});
 
 function alterarLayout() {
     if (botaoAlterar.textContent == "Cadastre-se") {
@@ -29,7 +29,6 @@ function alterarLayout() {
         campoCategoria = document.querySelector("#cadastroCategoria");
         campoCategoria.addEventListener("change", adicionarCamposEspecificos);
         formularioCadastro = document.querySelector(".informacoes-cadastro");
-
     } else {
         secaoPaginaLogin.innerHTML = `<div class="subsecao-pagina-login subsecao-banner">
         <button class="botao-padrao botao-alterar-layout">Cadastre-se</button>
@@ -45,16 +44,14 @@ function alterarLayout() {
 
             <input class="botao-padrao input-enviar" type="submit" value="Entrar">
         </form>
-    </div>`
+    </div>`;
     }
     botaoAlterar = document.querySelector(".botao-alterar-layout");
 }
 
 function adicionarCamposEspecificos() {
-    secaoPaginaLogin.setAttribute("style", "height: fit-content");
-
-	if (campoCategoria.value == "comunidade") {
-		formularioCadastro.innerHTML = `<fieldset>
+    if (campoCategoria.value == "comunidade") {
+        formularioCadastro.innerHTML = `<fieldset>
         <label class="input-titulo" for="cadastroNome">Nome da comunidade</label>
         <input class="input-conteudo" type="text" name="nome" id="cadastroNome" placeholder="Ex.: Grupo Alimentação Solidária" required>
 
@@ -87,7 +84,7 @@ function adicionarCamposEspecificos() {
         <input class="input-conteudo" type="password" name="senhaConfirmacao" id="cadastroConfirmacaoSenha" placeholder="Digite novamente sua senha" required>
     </fieldset>
     <input class="botao-padrao input-enviar" type="submit" value="Cadastrar">`;
-	} else if (campoCategoria.value == "produtorAgricola") {
+    } else if (campoCategoria.value == "produtorAgricola") {
         formularioCadastro.innerHTML = `							<fieldset>
         <label class="input-titulo" for="cadastroNome">Nome completo</label>
         <input class="input-conteudo" type="text" name="nome" id="cadastroNome" placeholder="Ex.: Pedro Henrique Silva e Sauro" required>
@@ -121,5 +118,5 @@ function adicionarCamposEspecificos() {
         <input class="input-conteudo" type="password" name="senhaConfirmacao" id="cadastroConfirmacaoSenha" placeholder="Digite novamente sua senha" required>
         </fieldset>
         <input class="botao-padrao input-enviar" type="submit" value="Cadastrar">`;
-	}
+    }
 }
