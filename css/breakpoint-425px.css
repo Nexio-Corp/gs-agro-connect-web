@@ -1,0 +1,28 @@
+@media (max-width: 425px) {
+    main .secao-parceria {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+    main .secao-parceria:nth-of-type(odd) {
+        flex-direction: column;
+    }
+    main > h2 {
+        text-align: center;
+    }
+    main .imagem-empresa-parceira {
+        width: 100%;
+    }
+    main .imagem-empresa-parceira img {
+        width: 100%;
+    }
+    main .secao-parceria .descricao-empresa-parceira {
+        width: 100%;
+    }
+    main .secao-parceria .descricao-empresa-parceira p {
+        width: 100%;
+    }
+    main .secao-parceria:nth-of-type(odd) .descricao-empresa-parceira {
+        margin-left: 0;
+    }
+}
