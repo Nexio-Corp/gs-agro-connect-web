@@ -1,3 +1,5 @@
+/*CSS relativo às páginas de conteúdo obrigatório (Agrigultura Sustentável, Inteligências Artificiais Generativas e Modelos de Cultivo Eficientes)*/
+@import url("../style.css");
 
 main{
     display: flex;
@@ -31,3 +33,4 @@ h2{
     border-radius: 1rem;
     width: 30%
 }
+

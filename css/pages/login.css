@@ -1,5 +1,4 @@
-@import url("./style.css");
-@import url("./login-938px.css");
+@import url("../style.css");
 .secao-pagina-login {
     width: 75%;
     margin: 1.5rem auto;
@@ -17,7 +16,7 @@
 }
 
 .subsecao-banner {
-    background: url("../assets/foto_colheita.png") center no-repeat;
+    background: url("../../assets/foto_colheita.png") center no-repeat;
     background-size: cover;
     border-radius: 1rem 0 0 1rem;
 }

@@ -1,7 +1,7 @@
-@import url("style.css");
+@import url("../style.css");
 
 .banner {
-    background: url("../assets/fundo_agricultura.png") no-repeat center center;
+    background: url("../../assets/fundo_agricultura.png") no-repeat center center;
     background-size: cover;
     height: 70vh;
     display: flex;

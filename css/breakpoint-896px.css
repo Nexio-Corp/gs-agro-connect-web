@@ -1,4 +1,4 @@
-@media (max-width: 938px){
+@media (max-width: 896px){
     .secao-pagina-login{
         flex-direction: column;
         gap: 2rem;  
@@ -10,5 +10,13 @@
     }
     .secao-pagina-login >.subsecao-banner{
         background-size: contain;
+    }
+    .rodape{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .rodape > .autores-rodape{
+        font-size: 1rem;
+        text-align: center;
     }
 }
