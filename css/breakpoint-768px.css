@@ -3,15 +3,15 @@
         flex-direction: column;
     }
 
-    .content {
+    .content-card > .content {
         flex-direction: column;
     }
 
-    .content img {
+    .content-card > .content img {
         width: 100%;
     }
 
-    .content article {
+    .content-card > .content article {
         width: 100%;
     }
 
