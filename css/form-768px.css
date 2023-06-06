@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    main > h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .input-titulo {
+        font-size: 1rem;
+    }
+    .conjunto-inputs {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-padrao {
+        width: 100%;
+    }
+    .conjunto-inputs > .input-centralizado,
+    .conjunto-inputs > .input-padrao {
+        width: 100%;
+    }
+    .conjunto-inputs > .input-centralizado > input,
+    .conjunto-inputs > .input-padrao > input,
+    .conjunto-inputs > .input-padrao > select,
+    .conjunto-inputs > .input-padrao > textarea {
+        width: 100%;
+    }
+}

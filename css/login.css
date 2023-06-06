@@ -1,12 +1,12 @@
 @import url("./style.css");
-
+@import url("./login-938px.css");
 .secao-pagina-login {
     width: 75%;
-	margin: 1.5rem auto;
-	background-color: rgba(245, 220, 197, 0.6);
-	border-radius: 1rem;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: rgba(245, 220, 197, 0.6);
+    border-radius: 1rem;
     display: flex;
-    height: 25rem;
 }
 
 .subsecao-pagina-login {
@@ -39,7 +39,8 @@
     margin-bottom: 2rem;
 }
 
-.informacoes-login, .informacoes-cadastro {
+.informacoes-login,
+.informacoes-cadastro {
     width: 70%;
     margin: 0 auto;
 }
