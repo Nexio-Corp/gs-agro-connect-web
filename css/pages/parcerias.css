@@ -41,6 +41,8 @@
 .imagem-empresa-parceira img {
 	width: 60%;
 	border: solid 0.25rem #289022;
+	border-radius: 1rem;
+
 }
 
 .botao-centralizado {
