@@ -1,0 +1,6 @@
+@media (max-width: 896px) {
+    .rodape{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
