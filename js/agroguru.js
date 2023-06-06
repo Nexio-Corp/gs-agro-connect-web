@@ -3,7 +3,6 @@ const getForm = () => document.querySelector("form"); // necessário pois o form
 const main = document.querySelector("main");
 const formHtml = main.innerHTML;
 const addFormEvent = (form) => {
-    console.log("addFormEvent", form);
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
         const formData = new FormData(form);
@@ -27,14 +26,24 @@ const resultHtml = (prompt) => {
     h1.textContent = "Agro Guru";
     const p = document.createElement("p");
     p.textContent = prompt;
-    const button = document.createElement("button");
-    button.id = "generate-again";
-    button.textContent = "Gere de novo";
-    button.onclick = () => {
+    const generateBtn = document.createElement("button");
+    generateBtn.id = "generate-again";
+    generateBtn.textContent = "Gere de novo";
+    generateBtn.onclick = () => {
         main.innerHTML = formHtml;
         addFormEvent(getForm());
     };
+    const copyBtn = document.createElement("button");
+    copyBtn.id = "copy";
+    copyBtn.textContent = "Copiar Prompt";
+    copyBtn.onclick = () => {
+        navigator.clipboard.writeText(prompt);
+        alert("Copiado!");
+    };
+    const buttons = document.createElement("div");
+    buttons.className = "buttons-div";
+    buttons.append(generateBtn, copyBtn);
     main.innerHTML = "";
-    main.append(h1, p, button);
+    main.append(h1, p, buttons);
 };
 addFormEvent(getForm());
