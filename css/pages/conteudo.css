@@ -6,11 +6,12 @@ main{
     flex-direction: column;
     gap: 2rem;
 }
+
 h2{
     color: #289022;
     font-size: 2rem;
-    margin: 0.5rem 5% 4rem 5%;
 }
+
 .content-card{
     display: flex;
     flex-direction: row;
@@ -18,18 +19,23 @@ h2{
     flex-wrap: wrap;
     margin: 0 5%;
 }
+
 .content{
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
+
 .content article{
     width: 50%;
-    font-size: 1.5rem;
+    color: #454545;
+    text-align: justify;
+	margin-bottom: 0.5rem;
 }
+
 .content-card img{
-    border:#289022 solid .3rem;
+    border: solid 0.25rem #289022;
     border-radius: 1rem;
     width: 30%
 }
