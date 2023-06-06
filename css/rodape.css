@@ -1,4 +1,3 @@
-@import url("rodape-896px.css");
 .rodape {
 	display: flex;
 	justify-content: space-between;
@@ -9,7 +8,7 @@
 }
 
 .logo-rodape {
-	height: 2.25rem;
+	height: 2.2rem;
 }
 
 .autores-rodape {

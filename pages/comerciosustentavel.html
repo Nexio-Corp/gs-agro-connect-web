@@ -1,136 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Parcerias | AgroConnect</title>
 
-        <link rel="stylesheet" href="../css/comerciosustentavel.css" />
-        <link
-            rel="shortcut icon"
-            href="../assets/icon_agroconnect.png"
-            type="image/x-icon"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcerias | AgroConnect</title>
 
-        <script src="../js/mobile-navbar.js" defer></script>
-        <script src="../js/dropdown.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a class="link-logo" href="../index.html"><img
-                        class="logo-agroconnect"
-                        src="../assets/logo_agroconnect.png"
-                        alt="Logo AgroConnect"
-                /></a>
-                <ul class="lista-nav">
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./agroguru.html">AgroGuru</a>
-                    </li>
-                    <li>
-                        <a href="./comerciosustentavel.html">Comércio Sustentável</a>
-                    </li>
-                    <li>
-                        <a href="./contato.html">Contato</a>
-                    </li>
-                    <li>
-                        <a id="item-aprenda_mais">Aprenda mais</a>
-                        <ul>
-                            <li>
-                                <a href="">Agricultura Sustentável</a>
-                            </li>
-                            <li>
-                                <a href=""
-                                    >Inteligências Artificiais Generativas</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./cultivo_eficiente.html"
-                                    >Modelos de Cultivo Eficientes
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Parcerias</a>
-                    </li>
-                </ul>
-                <a href="./login.html"
-                    ><button class="botao-padrao">Entrar</button></a
-                >
-                <img
-                    class="logo-nexio"
-                    src="../assets/logo_Nexio.png"
-                    alt="Logo Nexio"
-                />
+    <link rel="stylesheet" href="../css/pages/comerciosustentavel.css" />
+    <link rel="shortcut icon" href="../assets/icon_agroconnect.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/mobile-navbar.js" defer></script>
+    <script src="../js/dropdown.js" defer></script>
+</head>
 
-                <div class="mobile-menu">
-                    <div class="linha1"></div>
-                    <div class="linha2"></div>
-                    <div class="linha3"></div>
-                </div>
-            </nav>
-        </header>
+<body>
+    <header>
+        <nav>
+            <a class="link-logo" href="../index.html"><img class="logo-agroconnect" src="../assets/logo_agroconnect.png"
+                    alt="Logo AgroConnect" /></a>
+            <ul class="lista-nav">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./agroguru.html">AgroGuru</a>
+                </li>
+                <li>
+                    <a href="./comerciosustentavel.html">Comércio Sustentável</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+                <li>
+                    <a id="item-aprenda_mais">Aprenda mais</a>
+                    <ul>
+                        <li>
+                            <a href="">Agricultura Sustentável</a>
+                        </li>
+                        <li>
+                            <a href="">Inteligências Artificiais Generativas</a>
+                        </li>
+                        <li>
+                            <a href="./cultivo_eficiente.html">Modelos de Cultivo Eficientes
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Parcerias</a>
+                </li>
+            </ul>
+            <a href="./login.html"><button class="botao-padrao">Entrar</button></a>
+            <img class="logo-nexio" src="../assets/logo_Nexio.png" alt="Logo Nexio" />
 
-        <main>
-            <h1>Comércio Sustentável</h1>
-
-            <div class="form-comercio">
-                <form action="">
-                    <fieldset class="pesquisa-comercio">
-                        <input type="text" name="Nome" id="comercioInput" placeholder="Digite o nome de uma comunidade ou produtor" required>
-                        <select name="comercioEscolha" id="comercioSelect">
-                            <option value="escolha" disabled selected>Escolha uma opção</option>
-                            <option value="todos">Todos</option>
-                            <option value="comunidade">Comunidade</option>
-                            <option value="produtores">Produtores</option>
-                        </select>
-
-                        <select name="comercioLocalizacao" id="comercioSelect">
-                            <option value="escolha" disabled selected>Escolha uma País</option>
-                            <option value="brasil">Brasil</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="uruguai">Uruguai</option>
-                        </select>
-
-                        <input class="botao-padrao input-pesquisar" type="submit" value="Pesquisar">
-                    </fieldset>
-                </form>
-            </div>  
-        </main>
-
-        <footer class="rodape">
-            <img
-                class="logo-rodape"
-                src="../assets/logo_fiap.png"
-                alt="Logo Fiap"
-            />
-            <img
-                class="logo-rodape"
-                src="../assets/logo_caçafome.png"
-                alt="Logo Caça-Fome"
-            />
-            <img
-                class="logo-rodape"
-                src="../assets/logo_microsoft.png"
-                alt="Logo Microsoft"
-            />
-            <img
-                class="logo-rodape"
-                src="../assets/logo_kraft-heinz.png"
-                alt="Logo Kraft Heinz"
-            />
-            <div class="autores-rodape">
-                <p>Adrian Satiro Sivilha - rm97784</p>
-                <p>Cauã Alencar Rojas Romero - rm98638</p>
-                <p>Jaci Teixeira Santos - rm99627</p>
-                <p>Pedro Henrique Nobrega de Castro Paterno - rm99726</p>
-                <p>Sabrina Faustino do Prado - rm99570</p>
+            <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
             </div>
-        </footer>
-    </body>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Comércio Sustentável</h1>
+
+        <div class="form-comercio">
+            <form action="">
+                <fieldset class="pesquisa-comercio">
+                    <i class="fa fa-search" aria-hidden="true"></i><input type="text" name="Nome" id="comercioInput"
+                        placeholder="Digite o nome de uma comunidade ou produtor" required>
+                    <i class="fa fa-users" aria-hidden="true"></i><select name="comercioEscolha" id="comercioSelect">
+                        <option value="escolha" disabled selected>Escolha uma opção</option>
+                        <option value="">Todos</option>
+                        <option value="comunidades">Comunidades</option>
+                        <option value="produtores">Produtores</option>
+                    </select>
+
+                    <i class="fa fa-map-marker" aria-hidden="true"></i><select name="comercioLocalizacao"
+                        id="comercioSelect">
+                        <option value="escolha" disabled selected>Escolha uma País</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguai">Uruguai</option>
+                    </select>
+
+                    <input class="botao-padrao input-pesquisar" type="submit" value="Pesquisar">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="resultado-comercio">
+            <p>Resultado de Busca: 148</p>
+
+            <div class="card">
+                <img src="../assets/vilamariana.jpg" alt="Foto da Comunidade">
+                <div class="card-direito">
+                    <p>Comunidade</p>
+                    <h3>Comunidade da Vila Mariana</h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>São Paulo-SP</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus, turpis ac condimentum
+                        facilisis, felis sem dignissim purus, sit amet hendrerit neque dui ut tellus. Nulla sagittis
+                        libero quis nulla consequat, et rutrum sem iaculis. Nullam id consectetur nisi, sed dignissim
+                        risus. Integer pharetra, purus vel gravida congue, libero nisi sodales tortor, et posuere ex dui
+                        eget dolor. Mauris vestibulum ornare posuere.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../assets/produtor.jpg" alt="Foto do Produtor">
+                <div class="card-direito">
+                    <p>Produtor</p>
+                    <h3>José Fazendeiro</h3>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Parelheiros-SP</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempus, turpis ac condimentum
+                        facilisis, felis sem dignissim purus, sit amet hendrerit neque dui ut tellus. Nulla sagittis
+                        libero quis nulla consequat, et rutrum sem iaculis. Nullam id consectetur nisi, sed dignissim
+                        risus. Integer pharetra, purus vel gravida congue, libero nisi sodales tortor, et posuere ex dui
+                        eget dolor. Mauris vestibulum ornare posuere.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <img class="logo-rodape" src="../assets/logo_fiap.png" alt="Logo Fiap" />
+        <img class="logo-rodape" src="../assets/logo_caçafome.png" alt="Logo Caça-Fome" />
+        <img class="logo-rodape" src="../assets/logo_microsoft.png" alt="Logo Microsoft" />
+        <img class="logo-rodape" src="../assets/logo_kraft-heinz.png" alt="Logo Kraft Heinz" />
+        <div class="autores-rodape">
+            <p>Adrian Satiro Sivilha - rm97784</p>
+            <p>Cauã Alencar Rojas Romero - rm98638</p>
+            <p>Jaci Teixeira Santos - rm99627</p>
+            <p>Pedro Henrique Nobrega de Castro Paterno - rm99726</p>
+            <p>Sabrina Faustino do Prado - rm99570</p>
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -1,4 +1,5 @@
-@import url("style.css");
+@import url("../style.css");
+
 .input-centralizado {
     margin: 0.5rem auto;
     width: 90%;
