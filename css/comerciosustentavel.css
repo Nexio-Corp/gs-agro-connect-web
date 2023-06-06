@@ -1,22 +1,22 @@
 @import url("./style.css");
 
 .form-comercio{
-    margin: 3.5%;
+    margin: 4%;
     background-color: #fff;
     border-radius: 0.5rem;
 }
 
 #comercioInput{
-    width: 48%;
+    width: 38%;
     padding: 0.5rem;
     border: none;
     border-radius: 0.5rem;
+    outline: none;
 }
 
 #comercioSelect{
     width: 20%;
     padding: 0.5rem;
-    margin-left: -0.4rem;
     border: none;
 }
 
@@ -25,4 +25,47 @@
     padding: 0.5rem 1.5rem;
     border-radius: 0rem 0.5rem 0.5rem 0rem;
     float: right;
+}
+
+.fa{
+    color: rgb(77, 77, 77);
+    margin-left: 0.5rem;
+}
+
+.resultado-comercio{
+    margin: 4%;
+}
+
+.card{
+    display: flex;
+    margin-top: 2%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(65, 65, 65, 0.35) 0rem 0.1rem 0.5rem;
+    cursor: pointer;
+}
+
+.card img{
+    width: 24%;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.card-direito{
+    padding: 1.5rem;
+}
+
+.card-direito p {
+    color: rgb(92, 92, 92);
+    font-size: 14px;
+}
+
+.fa-map-marker:first-child{
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.card-direito p:last-child{
+    margin-top: 1.5%;
+    color: rgb(39, 39, 39);
+    font-size: 14px;
 }
