@@ -1,0 +1,28 @@
+@import url("./style.css");
+
+.form-comercio{
+    margin: 3.5%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+#comercioInput{
+    width: 48%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#comercioSelect{
+    width: 20%;
+    padding: 0.5rem;
+    margin-left: -0.4rem;
+    border: none;
+}
+
+.input-pesquisar{
+    margin-left: -0.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    float: right;
+}
