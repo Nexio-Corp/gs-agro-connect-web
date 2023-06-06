@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contato | AgroConnect</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato | AgroConnect</title>
 
-        <link rel="stylesheet" href="../css/contato.css">
-        <link rel="shortcut icon" href="./assets/icon_agroconnect.png" type="image/x-icon">
-        
-		<script src="../js/mobile-navbar.js" defer></script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a class="link-logo" href="../index.html"><img class="logo-agroconnect" src="../assets/logo_agroconnect.png" alt="Logo AgroConnect"/></a>
-				<ul class="lista-nav">
-					<li>
-						<a href="../index.html">Home</a>
-					</li>
-					<li>
-						<a href="./agroguru.html">AgroGuru</a>
-					</li>
-					<li>
-						<a href="./comerciosustentavel.html">Comércio Sustentável</a>
-					</li>
-					<li>
-						<a href="#">Contato</a>
-					</li>
-					<li>
-						<a id="item-aprenda_mais" href="">Aprenda mais</a>
-					</li>
-					<li>
-						<a href="./parcerias.html">Parcerias</a>
-					</li>
-				</ul>
-				<a href="./login.html"><button class="botao-padrao">Entrar</button></a>
-				<img class="logo-nexio" src="../assets/logo_Nexio.png" alt="Logo Nexio" />
+        <link rel="stylesheet" href="../css/contato.css" />
+        <link
+            rel="shortcut icon"
+            href="../assets/icon_agroconnect.png"
+            type="image/x-icon"
+        />
 
-				<div class="mobile-menu">
-					<div class="linha1"></div>
-					<div class="linha2"></div>
-					<div class="linha3"></div>
-				</div>
-			</nav>
-		</header>
+        <script src="../js/mobile-navbar.js" defer></script>
+        <script src="../js/dropdown.js" defer></script>
 
-		<main>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="link-logo" href="../index.html"
+                    ><img
+                        class="logo-agroconnect"
+                        src="../assets/logo_agroconnect.png"
+                        alt="Logo AgroConnect"
+                /></a>
+                <ul class="lista-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./agroguru.html">AgroGuru</a>
+                    </li>
+                    <li>
+                        <a href="./comerciosustentavel.html"
+                            >Comércio Sustentável</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li>
+                        <a id="item-aprenda_mais">Aprenda mais</a>
+                        <ul>
+                            <li>
+                                <a href="">Agricultura Sustentável</a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    >Inteligências Artificiais Generativas</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./cultivo_eficiente.html"
+                                    >Modelos de Cultivo Eficientes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./parcerias.html">Parcerias</a>
+                    </li>
+                </ul>
+                <a href="./login.html"
+                    ><button class="botao-padrao">Entrar</button></a
+                >
+                <img
+                    class="logo-nexio"
+                    src="../assets/logo_Nexio.png"
+                    alt="Logo Nexio"
+                />
+
+                <div class="mobile-menu">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
             <h1>Fale Conosco</h1>
-            
+
             <form class="secao-formulario" action="">
                 <div class="inputs-formulario">
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoNome">Nome completo</label>
-                            <input class="input-conteudo" type="text" name="nome" id="contatoNome" placeholder="Ex.: Maria da Silva Santos" required>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoNome"
+                                >Nome completo</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="nome"
+                                id="contatoNome"
+                                placeholder="Ex.: Maria da Silva Santos"
+                                required
+                            />
                         </div>
-                        
+
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoCategoria">Categoria</label>
-                            <select class="input-conteudo" name="categoria" id="contatoCategoria" required>
-                                <option value="" disabled selected>Escolha uma categoria</option>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoCategoria"
+                                >Categoria</label
+                            >
+                            <select
+                                class="input-conteudo"
+                                name="categoria"
+                                id="contatoCategoria"
+                                required
+                            >
+                                <option value="" disabled selected>
+                                    Escolha uma categoria
+                                </option>
                                 <option value="comunidade">Comunidade</option>
-                                <option value="produtorAgricola">Produtor Agrícola</option>
+                                <option value="produtorAgricola">
+                                    Produtor Agrícola
+                                </option>
                                 <option value="empresa">Empresa</option>
                                 <option value="outro">Outro</option>
                             </select>
@@ -71,25 +129,63 @@
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoEmail">Email</label>
-                            <input class="input-conteudo" type="email" name="email" id="contatoEmail" placeholder="Ex.: mariasantos@xmail.com" required>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoEmail"
+                                >Email</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="email"
+                                name="email"
+                                id="contatoEmail"
+                                placeholder="Ex.: mariasantos@xmail.com"
+                                required
+                            />
                         </div>
                     </div>
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoTelefone">Telefone/Celular</label>
-                            <input class="input-conteudo" type="tel" name="telefone" id="contatoTelefone" placeholder="Ex.: (00) 90000-0000" required>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoTelefone"
+                                >Telefone/Celular</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="tel"
+                                name="telefone"
+                                id="contatoTelefone"
+                                placeholder="Ex.: (00) 90000-0000"
+                                required
+                            />
                         </div>
-        
+
                         <fieldset class="input input-radio">
-                            <legend class="input-titulo input-obrigatorio">Este número é WhatsApp?</legend>
+                            <legend class="input-titulo input-obrigatorio">
+                                Este número é WhatsApp?
+                            </legend>
                             <div>
-                                <input class="input-radio-opcao" type="radio" name="whatsapp" id="contatoWhatsappSim" value="sim" required>
+                                <input
+                                    class="input-radio-opcao"
+                                    type="radio"
+                                    name="whatsapp"
+                                    id="contatoWhatsappSim"
+                                    value="sim"
+                                    required
+                                />
                                 <label for="contatoWhatsappSim">Sim</label>
                             </div>
                             <div>
-                                <input class="input-radio-opcao" type="radio" name="whatsapp" id="contatoWhatsappNao" value="nao" required>
+                                <input
+                                    class="input-radio-opcao"
+                                    type="radio"
+                                    name="whatsapp"
+                                    id="contatoWhatsappNao"
+                                    value="nao"
+                                    required
+                                />
                                 <label for="contatoWhatsappNao">Não</label>
                             </div>
                         </fieldset>
@@ -97,51 +193,125 @@
 
                     <div class="conjunto-inputs">
                         <fieldset class="input input-radio">
-                            <legend class="input-titulo input-obrigatorio">Qual é sua preferência de contato?</legend>
+                            <legend class="input-titulo input-obrigatorio">
+                                Qual é sua preferência de contato?
+                            </legend>
                             <div>
-                                <input class="input-radio-opcao" type="radio" name="preferenciaContato" id="contatoPreferenciaWhatsapp" value="whatsapp" required>
-                                <label for="contatoPreferenciaWhatsapp">WhatsApp</label>
+                                <input
+                                    class="input-radio-opcao"
+                                    type="radio"
+                                    name="preferenciaContato"
+                                    id="contatoPreferenciaWhatsapp"
+                                    value="whatsapp"
+                                    required
+                                />
+                                <label for="contatoPreferenciaWhatsapp"
+                                    >WhatsApp</label
+                                >
                             </div>
                             <div>
-                                <input class="input-radio-opcao" type="radio" name="preferenciaContato" id="contatoPreferenciaTelefone" value="telefone" required>
-                                <label for="contatoPreferenciaTelefone">Telefone</label>
+                                <input
+                                    class="input-radio-opcao"
+                                    type="radio"
+                                    name="preferenciaContato"
+                                    id="contatoPreferenciaTelefone"
+                                    value="telefone"
+                                    required
+                                />
+                                <label for="contatoPreferenciaTelefone"
+                                    >Telefone</label
+                                >
                             </div>
                             <div>
-                                <input class="input-radio-opcao" type="radio" name="preferenciaContato" id="contatoPreferenciaEmail" value="email" required>
-                                <label for="contatoPreferenciaEmail">Email</label>
+                                <input
+                                    class="input-radio-opcao"
+                                    type="radio"
+                                    name="preferenciaContato"
+                                    id="contatoPreferenciaEmail"
+                                    value="email"
+                                    required
+                                />
+                                <label for="contatoPreferenciaEmail"
+                                    >Email</label
+                                >
                             </div>
                         </fieldset>
                     </div>
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo" for="contatoPais">País</label>
-                            <input class="input-conteudo" type="text" name="pais" id="contatoPais" placeholder="Ex.: Brasil">
-                        </div>
-                    </div>
-                                        
-                    <div class="conjunto-inputs">
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="contatoEstado">Estado</label>
-                            <input class="input-conteudo" type="text" name="estado" id="contatoEstado" placeholder="Ex.: Ceará">
-                        </div>
-                        
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="contatoCidade">Cidade</label>
-                            <input class="input-conteudo" type="text" name="cidade" id="contatoCidade" placeholder="Ex.: Fortaleza">
+                            <label class="input-titulo" for="contatoPais"
+                                >País</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="pais"
+                                id="contatoPais"
+                                placeholder="Ex.: Brasil"
+                            />
                         </div>
                     </div>
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoAssunto">Assunto da Mensagem</label>
-                            <select class="input-conteudo" name="assunto" id="contatoAssunto" required>
-                                <option value="" disabled selected>Escolha um assunto</option>
-                                <option value="duvidasGerais">Dúvidas Gerais</option>
-                                <option value="suporteTecnico">Suporte Técnico</option>
-                                <option value="sugestoesMelhoria">Sugestões de Melhoria</option>
-                                <option value="parcerias">Parcerias e Colaborações</option>
-                                <option value="relatoProblema">Relatar um Problema</option>
+                            <label class="input-titulo" for="contatoEstado"
+                                >Estado</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="estado"
+                                id="contatoEstado"
+                                placeholder="Ex.: Ceará"
+                            />
+                        </div>
+
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="contatoCidade"
+                                >Cidade</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="cidade"
+                                id="contatoCidade"
+                                placeholder="Ex.: Fortaleza"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoAssunto"
+                                >Assunto da Mensagem</label
+                            >
+                            <select
+                                class="input-conteudo"
+                                name="assunto"
+                                id="contatoAssunto"
+                                required
+                            >
+                                <option value="" disabled selected>
+                                    Escolha um assunto
+                                </option>
+                                <option value="duvidasGerais">
+                                    Dúvidas Gerais
+                                </option>
+                                <option value="suporteTecnico">
+                                    Suporte Técnico
+                                </option>
+                                <option value="sugestoesMelhoria">
+                                    Sugestões de Melhoria
+                                </option>
+                                <option value="parcerias">
+                                    Parcerias e Colaborações
+                                </option>
+                                <option value="relatoProblema">
+                                    Relatar um Problema
+                                </option>
                                 <option value="outro">Outros Assuntos</option>
                             </select>
                         </div>
@@ -149,21 +319,52 @@
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="contatoMensagem">Mensagem</label>
-                            <textarea class="input-conteudo" name="mensagem" id="contatoMensagem" rows="10" placeholder="Escreva aqui sua mensagem para nós!" required></textarea>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="contatoMensagem"
+                                >Mensagem</label
+                            >
+                            <textarea
+                                class="input-conteudo"
+                                name="mensagem"
+                                id="contatoMensagem"
+                                rows="10"
+                                placeholder="Escreva aqui sua mensagem para nós!"
+                                required
+                            ></textarea>
                         </div>
                     </div>
 
-                    <input class="botao-padrao input-enviar" type="submit" value="Enviar">
+                    <input
+                        class="botao-padrao input-enviar"
+                        type="submit"
+                        value="Enviar"
+                    />
                 </div>
             </form>
         </main>
 
         <footer class="rodape">
-                <img class="logo-rodape" src="../assets/logo_fiap.png" alt="Logo Fiap">
-                <img class="logo-rodape" src="../assets/logo_caçafome.png" alt="Logo Caça-Fome">
-                <img class="logo-rodape" src="../assets/logo_microsoft.png" alt="Logo Microsoft">
-                <img class="logo-rodape" src="../assets/logo_kraft-heinz.png" alt="Logo Kraft Heinz">
+            <img
+                class="logo-rodape"
+                src="../assets/logo_fiap.png"
+                alt="Logo Fiap"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_caçafome.png"
+                alt="Logo Caça-Fome"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_microsoft.png"
+                alt="Logo Microsoft"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_kraft-heinz.png"
+                alt="Logo Kraft Heinz"
+            />
             <div class="autores-rodape">
                 <p>Adrian Satiro Sivilha - rm97784</p>
                 <p>Cauã Alencar Rojas Romero - rm98638</p>
@@ -172,5 +373,5 @@
                 <p>Sabrina Faustino do Prado - rm99570</p>
             </div>
         </footer>
-	</body>
+    </body>
 </html>

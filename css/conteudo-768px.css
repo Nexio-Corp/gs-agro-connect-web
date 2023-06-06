@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .content-card {
+        flex-direction: column;
+    }    
+    .content {
+        flex-direction: column;
+    }
+    .content img{
+        width: 100%;
+    }
+    .content article{
+        width: 100%;
+    }
+
+}

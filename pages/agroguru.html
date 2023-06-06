@@ -1,111 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>AgroGuru | AgroConnect</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AgroGuru | AgroConnect</title>
 
-        <link rel="stylesheet" href="../css/agroguru.css">
-        <link rel="shortcut icon" href="./assets/icon_agroconnect.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/agroguru.css" />
+        <link
+            rel="shortcut icon"
+            href="../assets/icon_agroconnect.png"
+            type="image/x-icon"
+        />
 
-        
-		<script src="../js/mobile-navbar.js" defer></script>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a class="link-logo" href="../index.html"><img class="logo-agroconnect" src="../assets/logo_agroconnect.png" alt="Logo AgroConnect"/></a>
-				<ul class="lista-nav">
-					<li>
-						<a href="../index.html">Home</a>
-					</li>
-					<li>
-						<a href="#">AgroGuru</a>
-					</li>
-					<li>
-						<a href="./comerciosustentavel.html">Comércio Sustentável</a>
-					</li>
-					<li>
-						<a href="./contato.html">Contato</a>
-					</li>
-					<li>
-						<a id="item-aprenda_mais" href="">Aprenda mais</a>
-					</li>
-					<li>
+        <script src="../js/mobile-navbar.js" defer></script>
+        <script src="../js/dropdown.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="link-logo" href="../index.html"
+                    ><img
+                        class="logo-agroconnect"
+                        src="../assets/logo_agroconnect.png"
+                        alt="Logo AgroConnect"
+                /></a>
+                <ul class="lista-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">AgroGuru</a>
+                    </li>
+                    <li>
+                        <a href="./comerciosustentavel.html"
+                            >Comércio Sustentável</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./contato.html">Contato</a>
+                    </li>
+                    <li>
+                        <a id="item-aprenda_mais">Aprenda mais</a>
+                        <ul>
+                            <li>
+                                <a href="">Agricultura Sustentável</a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    >Inteligências Artificiais Generativas</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./cultivo_eficiente.html"
+                                    >Modelos de Cultivo Eficientes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="./parcerias.html">Parcerias</a>
-					</li>
-				</ul>
-				<a href="./login.html"><button class="botao-padrao">Entrar</button></a>
-				<img class="logo-nexio" src="../assets/logo_Nexio.png" alt="Logo Nexio" />
-                
-				<div class="mobile-menu">
+                    </li>
+                </ul>
+                <a href="./login.html"
+                    ><button class="botao-padrao">Entrar</button></a
+                >
+                <img
+                    class="logo-nexio"
+                    src="../assets/logo_Nexio.png"
+                    alt="Logo Nexio"
+                />
+
+                <div class="mobile-menu">
                     <div class="linha1"></div>
-					<div class="linha2"></div>
-					<div class="linha3"></div>
-				</div>
-			</nav>
-		</header>
-        
-		<main>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
             <h1>AgroGuru</h1>
-            
+
             <form class="secao-formulario" action="">
                 <div class="inputs-formulario">
-                    <div class="conjunto-inputs ">
+                    <div class="conjunto-inputs">
                         <div class="input-centralizado">
-                            <label class="input-titulo input-obrigatorio" for="guruPergunta">Qual é sua pergunta?</label>
-                            <input class="input-conteudo" type="text" name="pergunta" id="guruPergunta" placeholder="Ex.: Qual é a melhor maneira de plantar batatas?" required>
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="guruPergunta"
+                                >Qual é sua pergunta?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="pergunta"
+                                id="guruPergunta"
+                                placeholder="Ex.: Qual é a melhor maneira de plantar batatas?"
+                                required
+                            />
                         </div>
                     </div>
 
                     <div class="conjunto-inputs">
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="guruLocalidade">Em que localidade?</label>
-                            <input class="input-conteudo" type="text" name="localidade" id="guruLocalidade" placeholder="Ex.: país, estado, cidade...">
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="guruLocalidade"
+                                >Em que localidade?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="localidade"
+                                id="guruLocalidade"
+                                placeholder="Ex.: país, estado, cidade..."
+                            />
                         </div>
-                        
+
                         <div class="input-padrao">
-                            <label class="input-titulo input-obrigatorio" for="guruEpoca">Em que época do ano?</label>
-                            <input class="input-conteudo" type="text" name="epoca" id="guruEpoca" placeholder="Ex.: estação do ano, mês...">
-                        </div>
-                    </div>
-                    
-                    <div class="conjunto-inputs">
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="guruTamanhoFazenda">Qual é o tamanho da fazenda?</label>
-                            <input class="input-conteudo" type="text" name="tamanhoFazenda" id="guruTamanhoFazenda" placeholder="Ex.: 100m², 50 hectares, 70 acres...">
-                        </div>
-                        
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="guruFerramentas">Quais ferramentas/maquinário utilizará?</label>
-                            <input class="input-conteudo" type="text" name="ferramentas" id="guruFerramentas" placeholder="Ex.: enxada, trator, colheitadeiras, rastreio...">
-                        </div>
-                    </div>
-                    
-                    <div class="conjunto-inputs">
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="guruInvestimento">Quanto está disposto a investir?</label>
-                            <input class="input-conteudo" type="text" name="investimento" id="guruInvestimento" placeholder="Ex.: R$200,00, 3 mil reais, 5k dólares...">
-                        </div>
-                        
-                        <div class="input-padrao">
-                            <label class="input-titulo" for="guruMaisDetalhes">Mais algum detalhe importante?</label>
-                            <input class="input-conteudo" type="text" name="maisDetalhes" id="guruMaisDetalhes" placeholder="Ex.: pratico agricultura familiar, trabalho com mais 3 pessoas...">
+                            <label
+                                class="input-titulo input-obrigatorio"
+                                for="guruEpoca"
+                                >Em que época do ano?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="epoca"
+                                id="guruEpoca"
+                                placeholder="Ex.: estação do ano, mês..."
+                            />
                         </div>
                     </div>
 
-                    <input class="botao-padrao input-enviar" type="submit" value="Perguntar ao AgroGuru">
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="guruTamanhoFazenda"
+                                >Qual é o tamanho da fazenda?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="tamanhoFazenda"
+                                id="guruTamanhoFazenda"
+                                placeholder="Ex.: 100m², 50 hectares, 70 acres..."
+                            />
+                        </div>
+
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="guruFerramentas"
+                                >Quais ferramentas/maquinário utilizará?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="ferramentas"
+                                id="guruFerramentas"
+                                placeholder="Ex.: enxada, trator, colheitadeiras, rastreio..."
+                            />
+                        </div>
+                    </div>
+
+                    <div class="conjunto-inputs">
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="guruInvestimento"
+                                >Quanto está disposto a investir?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="investimento"
+                                id="guruInvestimento"
+                                placeholder="Ex.: R$200,00, 3 mil reais, 5k dólares..."
+                            />
+                        </div>
+
+                        <div class="input-padrao">
+                            <label class="input-titulo" for="guruMaisDetalhes"
+                                >Mais algum detalhe importante?</label
+                            >
+                            <input
+                                class="input-conteudo"
+                                type="text"
+                                name="maisDetalhes"
+                                id="guruMaisDetalhes"
+                                placeholder="Ex.: pratico agricultura familiar, trabalho com mais 3 pessoas..."
+                            />
+                        </div>
+                    </div>
+
+                    <input
+                        class="botao-padrao input-enviar"
+                        type="submit"
+                        value="Perguntar ao AgroGuru"
+                    />
                 </div>
-
             </form>
         </main>
 
         <footer class="rodape">
-                <img class="logo-rodape" src="../assets/logo_fiap.png" alt="Logo Fiap">
-                <img class="logo-rodape" src="../assets/logo_caçafome.png" alt="Logo Caça-Fome">
-                <img class="logo-rodape" src="../assets/logo_microsoft.png" alt="Logo Microsoft">
-                <img class="logo-rodape" src="../assets/logo_kraft-heinz.png" alt="Logo Kraft Heinz">
+            <img
+                class="logo-rodape"
+                src="../assets/logo_fiap.png"
+                alt="Logo Fiap"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_caçafome.png"
+                alt="Logo Caça-Fome"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_microsoft.png"
+                alt="Logo Microsoft"
+            />
+            <img
+                class="logo-rodape"
+                src="../assets/logo_kraft-heinz.png"
+                alt="Logo Kraft Heinz"
+            />
             <div class="autores-rodape">
                 <p>Adrian Satiro Sivilha - rm97784</p>
                 <p>Cauã Alencar Rojas Romero - rm98638</p>
@@ -114,5 +228,5 @@
                 <p>Sabrina Faustino do Prado - rm99570</p>
             </div>
         </footer>
-	</body>
+    </body>
 </html>
