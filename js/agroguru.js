@@ -36,9 +36,12 @@ const resultHtml = (prompt) => {
     const copyBtn = document.createElement("button");
     copyBtn.id = "copy";
     copyBtn.textContent = "Copiar Prompt";
-    copyBtn.onclick = () => {
-        navigator.clipboard.writeText(prompt);
-        alert("Copiado!");
+    copyBtn.onclick = async () => {
+        await navigator.clipboard.writeText(prompt);
+        copyBtn.textContent = "Copiado!";
+    };
+    copyBtn.onmouseleave = () => {
+        copyBtn.textContent = "Copiar Prompt";
     };
     const buttons = document.createElement("div");
     buttons.className = "buttons-div";
