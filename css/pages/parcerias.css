@@ -34,6 +34,8 @@
 .secao-parceria p {
 	color: #454545;
 	width: 82.5%;
+	text-align: justify;
+	margin-bottom: 0.5rem;
 }
 
 .imagem-empresa-parceira img {
