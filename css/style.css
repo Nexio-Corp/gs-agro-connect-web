@@ -3,27 +3,28 @@
 @import url("./rodape.css");
 @import url("./principal.css");
 @import url("./form-768px.css");
+@import url("./form-320px.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
 
 * {
-	margin: 0;
-	padding: 0;
-	font-family: "Lato", sans-serif;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box; 
 }
 
 a {
-	color: #289022;
-	text-decoration: none;
-	transition: 0.3s;
+    color: #289022;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 h1 {
-	font-size: 2.25rem;
-	color: #289022;
-	font-weight: 800;
-	padding-top: 1%;
-	margin-left: 3.5%;
+    font-size: 2.25rem;
+    color: #289022;
+    font-weight: 800;
+    padding-top: 1%;
+    margin-left: 3.5%;
     text-decoration: underline;
 }
 
@@ -38,29 +39,29 @@ h3 {
     font-weight: 800;
     font-size: 1.5rem;
 }
-button, .input-enviar{
-	transition: 0.5s;
+button,
+.input-enviar {
+    transition: 0.5s;
 }
 
 button:hover,
 .input-enviar:hover {
-	transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-
 fieldset {
-	border: none;
+    border: none;
 }
 
 .botao-padrao {
     background-color: #289022;
-	color: #fff;
-	padding: 0.6rem 1.5rem;
-	font-weight: 600;
-	font-size: 16px;
-	border-radius: 0.625rem;
-	border: 0;
-	cursor: pointer;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0.625rem;
+    border: 0;
+    cursor: pointer;
 }
 
 .input-enviar {
@@ -72,44 +73,44 @@ fieldset {
 }
 
 .secao-formulario {
-	width: 75%;
-	margin: 1.5rem auto;
-	background-color: rgba(245, 220, 197, 0.6);
-	border-radius: 1rem;
+    width: 75%;
+    margin: 1.5rem auto;
+    background-color: rgba(245, 220, 197, 0.6);
+    border-radius: 1rem;
 }
 
 .inputs-formulario {
-	width: 85%;
-	margin: 0 auto;
-	padding: 2rem 0;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 .conjunto-inputs {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     padding: 0.25rem 0;
 }
 
 .input-padrao {
-	width: 50%;
-	margin: 0.5rem 0 0.5rem;
+    width: 50%;
+    margin: 0.5rem 0 0.5rem;
 }
 
 .input-titulo {
-	display: block;
-	margin-bottom: 0.3rem;
-	color: #289022;
-	font-weight: 700;
-	font-size: 1.25rem;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #289022;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 .input-conteudo {
     padding: 0.5rem;
     color: #545454;
     width: 90%;
-	border: none;
-	border-radius: 0.625rem;
-	background-color: #FFFDF4;
+    border: none;
+    border-radius: 0.625rem;
+    background-color: #fffdf4;
 }
 
 .input-obrigatorio::after {
@@ -118,5 +119,5 @@ fieldset {
 }
 
 .input-radio-opcao {
-	accent-color: #289022;
+    accent-color: #289022;
 }
