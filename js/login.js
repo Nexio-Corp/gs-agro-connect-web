@@ -10,7 +10,7 @@ secaoPaginaLogin.addEventListener("click", function (event) {
 });
 
 function alterarLayout() {
-    if (botaoAlterar.textContent == "Cadastre-se") {
+    if (botaoAlterar.textContent.includes("Cadastre-se")) {
         secaoPaginaLogin.innerHTML = `				<div class="subsecao-pagina-login subsecao-formulario">
         <form action="">
             <fieldset class="informacoes-cadastro">
@@ -50,7 +50,7 @@ function alterarLayout() {
 }
 
 function adicionarCamposEspecificos() {
-    if (campoCategoria.value == "comunidade") {
+    if (campoCategoria.value.includes("comunidade")) {
         formularioCadastro.innerHTML = `<fieldset>
         <label class="input-titulo" for="cadastroNome">Nome da comunidade</label>
         <input class="input-conteudo" type="text" name="nome" id="cadastroNome" placeholder="Ex.: Grupo Alimentação Solidária" required>
@@ -84,7 +84,7 @@ function adicionarCamposEspecificos() {
         <input class="input-conteudo" type="password" name="senhaConfirmacao" id="cadastroConfirmacaoSenha" placeholder="Digite novamente sua senha" required>
     </fieldset>
     <input class="botao-padrao input-enviar" type="submit" value="Cadastrar">`;
-    } else if (campoCategoria.value == "produtorAgricola") {
+    } else if (campoCategoria.value.includes("produtorAgricola")) {
         formularioCadastro.innerHTML = `							<fieldset>
         <label class="input-titulo" for="cadastroNome">Nome completo</label>
         <input class="input-conteudo" type="text" name="nome" id="cadastroNome" placeholder="Ex.: Pedro Henrique Silva e Sauro" required>
