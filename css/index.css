@@ -2,8 +2,8 @@
 
 .banner {
     background: url("../assets/fundo_agricultura.png") no-repeat center center;
-	background-size: cover;
-	height: 70vh;
+    background-size: cover;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
