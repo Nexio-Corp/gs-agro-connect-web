@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    h1{
+        margin-left: 0;
+        text-align: center;
+    }
+    .input-titulo{
+        font-size: 1rem;
+    }
+    .conjunto-inputs{
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-padrao{
+        width: 100%;
+    }
+    .conjunto-inputs > .input-centralizado{
+        width: 100%;
+    }
+}
