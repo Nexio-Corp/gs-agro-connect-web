@@ -4,18 +4,25 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Modelos de Cultivo Eficientes | AgroConnect</title>
+        <title>Comércio Sustentável | AgroConnect</title>
 
-        <link rel="stylesheet" href="../css/pages/conteudo.css" />
+        <link rel="stylesheet" href="../css/pages/comerciosustentavel.css" />
         <link
             rel="shortcut icon"
             href="../assets/icon_agroconnect.png"
             type="image/x-icon"
         />
-
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <script src="../js/mobile-navbar.js" defer></script>
         <script src="../js/dropdown.js" defer></script>
     </head>
+
     <body>
         <header>
             <nav>
@@ -33,9 +40,7 @@
                         <a href="./agroguru.html">AgroGuru</a>
                     </li>
                     <li>
-                        <a href="./comerciosustentavel.html"
-                            >Comércio Sustentável</a
-                        >
+                        <a href="#">Comércio Sustentável</a>
                     </li>
                     <li>
                         <a href="./contato.html">Contato</a>
@@ -80,77 +85,100 @@
         </header>
 
         <main>
-            <h1>Modelos de Cultivos Eficientes</h1>
-            <section class="content-card">
-                <h2>Agricultura vertical</h2>
-                <div class="content">
+            <h1>Comércio Sustentável</h1>
+
+            <div class="form-comercio">
+                <form action="">
+                    <fieldset class="pesquisa-comercio">
+                        <i class="fa fa-search" aria-hidden="true"></i
+                        ><input
+                            type="text"
+                            name="Nome"
+                            id="comercioInput"
+                            placeholder="Digite o nome de uma comunidade ou produtor"
+                            required
+                        />
+                        <i class="fa fa-users" aria-hidden="true"></i
+                        ><select name="comercioEscolha" id="comercioSelect">
+                            <option value="escolha" disabled selected>
+                                Escolha uma opção
+                            </option>
+                            <option value="">Todos</option>
+                            <option value="comunidades">Comunidades</option>
+                            <option value="produtores">Produtores</option>
+                        </select>
+
+                        <i class="fa fa-map-marker" aria-hidden="true"></i
+                        ><select name="comercioLocalizacao" id="comercioSelect">
+                            <option value="escolha" disabled selected>
+                                Escolha uma País
+                            </option>
+                            <option value="brasil">Brasil</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="uruguai">Uruguai</option>
+                        </select>
+
+                        <input
+                            class="botao-padrao input-pesquisar"
+                            type="submit"
+                            value="Pesquisar"
+                        />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="resultado-comercio">
+                <p>Resultado de Busca: 148</p>
+
+                <div class="card">
                     <img
-                        src="../assets/Agricultura-Vertical.jpg"
-                        alt="Uma foto de uma horta vertical em prateleiras"
+                        src="../assets/vilamariana.jpg"
+                        alt="Foto da Comunidade"
                     />
-                    <article>
+                    <div class="card-direito">
+                        <p>Comunidade</p>
+                        <h3>Comunidade da Vila Mariana</h3>
                         <p>
-                            A agricultura vertical envolve o cultivo de plantas
-                            em pilhas ou prateleiras, maximizando o uso do
-                            espaço disponível
+                            <i class="fa fa-map-marker" aria-hidden="true"></i
+                            >São Paulo-SP
                         </p>
                         <p>
-                            Essa técnica utiliza sistemas hidropônicos ou
-                            aeropônicos para fornecer água e nutrientes às
-                            plantas, resultando em um uso mais eficiente de
-                            recursos e uma produção agrícola aumentada.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vestibulum tempus, turpis ac condimentum
+                            facilisis, felis sem dignissim purus, sit amet
+                            hendrerit neque dui ut tellus. Nulla sagittis libero
+                            quis nulla consequat, et rutrum sem iaculis. Nullam
+                            id consectetur nisi, sed dignissim risus. Integer
+                            pharetra, purus vel gravida congue, libero nisi
+                            sodales tortor, et posuere ex dui eget dolor. Mauris
+                            vestibulum ornare posuere.
                         </p>
-                    </article>
+                    </div>
                 </div>
-            </section>
-            <section class="content-card">
-                <h2>Aquaponia</h2>
-                <div class="content">
-                    <img
-                        src="../assets/aquaponia.jpg"
-                        alt="Uma foto de uma horta acima de uma caixa d'água usada para criação de peixes"
-                    />
-                    <article>
+
+                <div class="card">
+                    <img src="../assets/produtor.jpg" alt="Foto do Produtor" />
+                    <div class="card-direito">
+                        <p>Produtor</p>
+                        <h3>José Fazendeiro</h3>
                         <p>
-                            A aquaponia é um sistema sustentável que combina a
-                            criação de peixes com o cultivo de plantas.
+                            <i class="fa fa-map-marker" aria-hidden="true"></i
+                            >Parelheiros-SP
                         </p>
                         <p>
-                            Os resíduos dos peixes são convertidos em nutrientes
-                            para as plantas, que, por sua vez, filtram a água
-                            para os peixes.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vestibulum tempus, turpis ac condimentum
+                            facilisis, felis sem dignissim purus, sit amet
+                            hendrerit neque dui ut tellus. Nulla sagittis libero
+                            quis nulla consequat, et rutrum sem iaculis. Nullam
+                            id consectetur nisi, sed dignissim risus. Integer
+                            pharetra, purus vel gravida congue, libero nisi
+                            sodales tortor, et posuere ex dui eget dolor. Mauris
+                            vestibulum ornare posuere.
                         </p>
-                        <p>
-                            Essa simbiose permite um uso eficiente de recursos,
-                            como água e nutrientes, resultando em um sistema de
-                            cultivo altamente produtivo.
-                        </p>
-                    </article>
+                    </div>
                 </div>
-            </section>
-            <section class="content-card">
-                <h2>Agricultura de precisão</h2>
-                <div class="content">
-                    <img
-                        src="../assets/agricultura-de-precisao-drone.jpg"
-                        alt="Uma foto de um drone sobrevoando uma lavoura"
-                    />
-                    <article>
-                        <p>
-                            A agricultura de precisão utiliza tecnologias
-                            avançadas, como sensoriamento remoto, GPS e análise
-                            de dados, para otimizar o uso de insumos agrícolas.
-                        </p>
-                        <p>
-                            Por meio da identificação de variações nas condições
-                            do solo e das plantas, os agricultores podem aplicar
-                            fertilizantes, água e defensivos de forma mais
-                            precisa, reduzindo desperdícios e aumentando a
-                            eficiência do cultivo.
-                        </p>
-                    </article>
-                </div>
-            </section>
+            </div>
         </main>
 
         <footer class="rodape">
