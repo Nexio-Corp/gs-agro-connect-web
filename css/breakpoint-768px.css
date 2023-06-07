@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+    /* Pagina de conteúdo */
     .content-card {
         flex-direction: column;
     }
@@ -19,7 +20,7 @@
         margin-left: 0;
         text-align: center;
     }
-
+    /* Formulários genéricos */
     .input-titulo {
         font-size: 1rem;
     }
@@ -43,5 +44,19 @@
     .conjunto-inputs > .input-padrao > select,
     .conjunto-inputs > .input-padrao > textarea {
         width: 100%;
+    }
+    /* Logo do cabeçalho */
+    .link-logo {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-logo .logo-agroconnect {
+        content: url("../assets/logo_agroconnect_mobile.png");
+        width: 50%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
     }
 }

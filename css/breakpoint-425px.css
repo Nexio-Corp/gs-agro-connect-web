@@ -1,4 +1,5 @@
 @media (max-width: 425px) {
+    /* Pagina de parceria */
     main .secao-parceria {
         flex-direction: column-reverse;
         margin: 0;

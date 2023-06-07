@@ -1,0 +1,23 @@
+@media (max-width: 960px) {
+    /* Cabeçalho */
+    header .lista-nav {
+        display: none;
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        width: 50vw;
+        height: 86vh;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: transform 0.3s ease-in;
+    }
+    header .lista-nav li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    header .mobile-menu {
+        display: block;
+    }
+}
