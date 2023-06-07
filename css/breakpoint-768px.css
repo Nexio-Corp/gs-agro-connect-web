@@ -59,4 +59,7 @@
         object-position: center;
         object-fit: contain;
     }
+    header .logo-nexio {
+        width: 20%;
+    }
 }
