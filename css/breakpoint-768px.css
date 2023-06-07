@@ -44,4 +44,17 @@
     .conjunto-inputs > .input-padrao > textarea {
         width: 100%;
     }
+    .link-logo {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-logo .logo-agroconnect {
+        content: url("../assets/logo_agroconnect_mobile.png");
+        width: 50%;
+        height: 100%;
+        object-position: center;
+        object-fit: contain;
+    }
 }
