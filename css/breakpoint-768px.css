@@ -62,4 +62,18 @@
     header .logo-nexio {
         width: 20%;
     }
+    /* Comercio */
+    .field {
+        width: 100%;
+    }
+    .form-comercio form fieldset {
+        grid-template-areas: "input" "select1" "select2" "button";
+    }
+    fieldset .field > input,
+    fieldset .field > select {
+        width: 80%;
+    }
+    .form-comercio form fieldset .field > input[type="submit"] {
+        width: 100%;
+    }
 }
