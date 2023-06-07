@@ -9,8 +9,7 @@ class MobileNavbar {
 
     animateLinks() {
         this.navLinks.forEach((link, index) => {
-            const timeAnimation =
-                index < 6 ? index / 7 + 0.1 : (index - 6) / 7 + 0.1; // Caso esteja no sexto item já está na segunda lista, então deve-se subtrair 6 do index para que o tempo de animação seja o mesmo
+            const timeAnimation = index / 7 + 0.1;
             link.style.animation
                 ? (link.style.animation = "")
                 : (link.style.animation = `navLinkFade 0.5s ease forwards ${timeAnimation}s`);
