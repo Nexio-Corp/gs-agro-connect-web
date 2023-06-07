@@ -59,4 +59,36 @@
         object-position: center;
         object-fit: contain;
     }
+    header .logo-nexio {
+        width: 20%;
+    }
+    /* Comercio */
+    .field {
+        width: 100%;
+    }
+    .form-comercio form fieldset {
+        grid-template-areas: "input" "select1" "select2" "button";
+    }
+    fieldset .field > input,
+    fieldset .field > select {
+        width: 80%;
+    }
+    .form-comercio form fieldset .field > input[type="submit"] {
+        width: 100%;
+    }
+    .resultado-comercio .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resultado-comercio .card img {
+        width: 50%;
+        border-radius: 0.5rem;
+        margin-top: 2%;
+    }
+    .resultado-comercio .card .card-direito {
+        text-align: center;
+    }
+    .resultado-comercio .card .card-direito p:first-child {
+        float: unset;
+    }
 }

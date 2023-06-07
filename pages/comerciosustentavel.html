@@ -90,39 +90,54 @@
             <div class="form-comercio">
                 <form action="">
                     <fieldset class="pesquisa-comercio">
-                        <i class="fa fa-search" aria-hidden="true"></i
-                        ><input
-                            type="text"
-                            name="Nome"
-                            id="comercioInput"
-                            placeholder="Digite o nome de uma comunidade ou produtor"
-                            required
-                        />
-                        <i class="fa fa-users" aria-hidden="true"></i
-                        ><select name="comercioEscolha" id="comercioSelect">
-                            <option value="escolha" disabled selected>
-                                Escolha uma opção
-                            </option>
-                            <option value="">Todos</option>
-                            <option value="comunidades">Comunidades</option>
-                            <option value="produtores">Produtores</option>
-                        </select>
+                        <div class="field">
+                            <i class="fa fa-search" aria-hidden="true"></i
+                            ><input
+                                type="text"
+                                name="Nome"
+                                id="comercioInput"
+                                placeholder="Digite o nome de uma comunidade ou produtor"
+                                required
+                            />
+                        </div>
+                        <div class="field">
+                            <i class="fa fa-users" aria-hidden="true"></i
+                            ><select
+                                name="comercioEscolha"
+                                class="comercioSelect"
+                                id="comercioEscolha"
+                            >
+                                <option value="escolha" disabled selected>
+                                    Escolha uma opção
+                                </option>
+                                <option value="">Todos</option>
+                                <option value="comunidades">Comunidades</option>
+                                <option value="produtores">Produtores</option>
+                            </select>
+                        </div>
 
-                        <i class="fa fa-map-marker" aria-hidden="true"></i
-                        ><select name="comercioLocalizacao" id="comercioSelect">
-                            <option value="escolha" disabled selected>
-                                Escolha uma País
-                            </option>
-                            <option value="brasil">Brasil</option>
-                            <option value="argentina">Argentina</option>
-                            <option value="uruguai">Uruguai</option>
-                        </select>
-
-                        <input
-                            class="botao-padrao input-pesquisar"
-                            type="submit"
-                            value="Pesquisar"
-                        />
+                        <div class="field">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i
+                            ><select
+                                name="comercioLocalizacao"
+                                class="comercioSelect"
+                                id="comercioLocalizacao"
+                            >
+                                <option value="escolha" disabled selected>
+                                    Escolha uma País
+                                </option>
+                                <option value="brasil">Brasil</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="uruguai">Uruguai</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <input
+                                class="botao-padrao input-pesquisar"
+                                type="submit"
+                                value="Pesquisar"
+                            />
+                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -131,12 +146,18 @@
                 <p>Resultado de Busca: 148</p>
 
                 <div class="card">
-                    <img src="../assets/comunidade.png"alt="Foto da Comunidade"/>
+                    <img
+                        src="../assets/comunidade.png"
+                        alt="Foto da Comunidade"
+                    />
                     <div class="card-direito">
                         <p>População: 2 mil</p>
                         <p>Comunidade</p>
                         <h3>Comunidade Bora pra Rua</h3>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Belo Horizonte-MG</p>
+                        <p>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i
+                            >Belo Horizonte-MG
+                        </p>
                         <button class="botao-padrao">Saiba Mais</button>
                     </div>
                 </div>
@@ -147,7 +168,10 @@
                         <p>Produtos cultivados: batata, arroz</p>
                         <p>Produtor</p>
                         <h3>José Fazendeiro</h3>
-                        <p><i class="fa fa-map-marker" aria-hidden="true"></i>Parelheiros-SP</p>
+                        <p>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i
+                            >Parelheiros-SP
+                        </p>
                         <button class="botao-padrao">Saiba Mais</button>
                     </div>
                 </div>
