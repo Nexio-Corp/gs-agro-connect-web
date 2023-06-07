@@ -91,4 +91,16 @@
     .resultado-comercio .card .card-direito p:first-child {
         float: unset;
     }
+    /* Index */
+    main .como-funciona {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    main .como-funciona .card {
+        width: 100%;
+    }
+    main .como-funciona .card img {
+        width: 100%;
+    }
 }

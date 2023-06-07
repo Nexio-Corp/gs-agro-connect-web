@@ -47,6 +47,7 @@
 }
 .card-img img {
     width: 100%;
+    filter: invert(100%);
 }
 article {
     display: flex;
