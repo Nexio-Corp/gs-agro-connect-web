@@ -1,7 +1,8 @@
 @import url("../style.css");
 
 .banner {
-    background: url("../../assets/fundo_agricultura.png") no-repeat center center;
+    background: url("../../assets/fundo_agricultura.png") no-repeat center
+        center;
     background-size: cover;
     height: 70vh;
     display: flex;
@@ -38,22 +39,32 @@
     text-align: center;
 }
 
-.conteudo-principal img{
-    width: 100%;
+.conteudo-principal .card-img {
+    width: 50%;
     padding: 2rem;
-}
-
-.como-funciona div{
     background-color: #289022;
-    height: 7rem;
-    width: 7rem;
-    text-align: center;
     border-radius: 50%;
+}
+.card-img img {
+    width: 100%;
+    filter: invert(100%);
+}
+article {
     display: flex;
-    align-items: center;
-    margin-left: 5%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.como-funciona{
+.como-funciona .card {
+    width: 20%;
+    gap: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.como-funciona {
     display: flex;
 }
