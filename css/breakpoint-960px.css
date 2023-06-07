@@ -16,7 +16,13 @@
     header .lista-nav li {
         margin-left: 0;
         opacity: 0;
+
+        background-color: transparent;
     }
+    body header .lista-nav li a {
+        color: #289022;
+    }
+
     header .mobile-menu {
         display: block;
     }
