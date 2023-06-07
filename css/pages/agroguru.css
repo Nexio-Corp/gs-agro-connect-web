@@ -4,16 +4,16 @@
     margin: 0.5rem auto;
     width: 90%;
 }
-main p{
+main p {
     text-align: justify;
     font-size: 1.2rem;
-    padding: .5rem 15%;
+    padding: 0.5rem 15%;
 }
-main > .buttons-div{
+.buttons-div {
     display: flex;
     justify-content: space-around;
 }
-main > .buttons-div > button{
+.buttons-div > button {
     width: 20%;
     margin: 0.5rem;
     padding: 0.5rem;
@@ -24,7 +24,7 @@ main > .buttons-div > button{
     font-size: 1.2rem;
     cursor: pointer;
 }
-main > .buttons-div > button:hover{
+main > .buttons-div > button:hover {
     background-color: #1e6f1e;
     transform: scale(1.1);
 }

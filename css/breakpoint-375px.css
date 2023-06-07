@@ -1,0 +1,5 @@
+@media (max-width: 375px) {
+    main > .buttons-div > button {
+        width: 50%;
+    }
+}
