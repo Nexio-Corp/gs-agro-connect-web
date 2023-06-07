@@ -57,29 +57,6 @@ nav {
     transition: 0.3s;
 }
 
-@media (max-width: 960px) {
-    .lista-nav {
-        display: none;
-        position: absolute;
-        top: 14vh;
-        right: 0;
-        width: 50vw;
-        height: 86vh;
-        background: #fff;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transition: transform 0.3s ease-in;
-    }
-    .lista-nav li {
-        margin-left: 0;
-        opacity: 0;
-    }
-    .mobile-menu {
-        display: block;
-    }
-}
-
 .lista-nav.active {
     display: flex;
 }
