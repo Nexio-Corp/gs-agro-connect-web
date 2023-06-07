@@ -1,7 +1,9 @@
 @media (max-width: 320px) {
+    /* h1 genérico */
     main > h1 {
         font-size: 1.5rem;
     }
+    /* Banner de conteúdo da index */
     .banner .banner-conteudo {
         font-size: 2rem;
     }

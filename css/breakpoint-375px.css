@@ -1,4 +1,5 @@
 @media (max-width: 375px) {
+    /* AgroGuru */
     main > .buttons-div > button {
         width: 50%;
     }
