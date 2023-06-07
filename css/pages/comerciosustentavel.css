@@ -51,12 +51,22 @@
 }
 
 .card-direito{
+    width: 100%;
     padding: 1.5rem;
 }
 
 .card-direito p {
     color: rgb(92, 92, 92);
-    font-size: 14px;
+    font-size: 14px
+}
+
+.card h3{
+    margin-top: 1%;
+}
+
+.card button{
+    margin-top: 3%;
+    padding: 0.5rem 1rem;
 }
 
 .fa-map-marker:first-child{
@@ -64,8 +74,6 @@
     margin-right: 0.5rem;
 }
 
-.card-direito p:last-child{
-    margin-top: 1.5%;
-    color: rgb(39, 39, 39);
-    font-size: 14px;
+.card-direito p:first-child{
+    float: right;
 }
