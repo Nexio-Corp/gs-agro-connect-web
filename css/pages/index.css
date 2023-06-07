@@ -33,6 +33,27 @@
     margin: 0 auto;
 }
 
+.conteudo-principal {
+    margin-top: 4%;
+    text-align: center;
+}
+
 .conteudo-principal img{
-    width: 9%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.como-funciona div{
+    background-color: #289022;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.como-funciona{
+    display: flex;
 }
